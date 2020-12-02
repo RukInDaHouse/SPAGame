@@ -108,10 +108,34 @@
 
 header {
   width: 100%;
-  height: 20%;
-  background: #000;
+  background: #FF882A;
   padding: 0;
   margin: 0; 
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 1440px) {
+
+  header {
+  height: 150px;
+}
+
+.container {
+  margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  header {
+  height: 120px;
+}
+
+.container {
+  display: none;
+  }
 }
 
 .container .ratio16-9 {
@@ -270,3 +294,95 @@ header {
   line-height: 64px;
   transition: all 0.3s;
 }
+
+.small {
+    -webkit-animation-name: smallb;
+    -moz-animation-name: smallb;
+    -o-animation-name: smallb;
+    animation-name: smallb;
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+  @-webkit-keyframes smallb {
+    100% {width: 25%;} 
+    0% {width: 100%;}
+   }
+   @-moz-keyframes smallb {
+    100% {width: 25%;} 
+    0% {width: 100%;}
+   }
+   @-o-keyframes smallb {
+    100% {width: 25%;} 
+    0% {width: 100%;}
+   }
+   @keyframes smallb {
+    100% {width: 100%; }
+    25% {margin: 0%;}
+    25% {width: 25%;} 
+    0% {width: 100%;}
+   }
+
+   .smallleft {
+    -webkit-animation-name: smalll;
+    -moz-animation-name: smalll;
+    -o-animation-name: smalll;
+    animation-name: smalll;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+  @-webkit-keyframes smalll {
+    100% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 70%; width: 100%;}
+   }
+   @-moz-keyframes smalll {
+    100% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 70%; width: 100%;}
+   }
+   @-o-keyframes smalll {
+    100% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 70%; width: 100%;}
+   }
+   @keyframes smalll {
+    100% {left: 0%; width: 100%; z-index: 9999;}
+    75% {margin-left: 0%; width: 50%;}
+    50% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 0%; width: 100%;}
+   }
+
+   .smallright {
+    -webkit-animation-name: smallr;
+    -moz-animation-name: smallr;
+    -o-animation-name: smallr;
+    animation-name: smallr;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+  @-webkit-keyframes smallr {
+    100% {margin-left: 70%; width: 100%; z-index: 9999;}
+    50% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 0%; width: 100%;}
+   }
+   @-moz-keyframes smallr {
+    100% {margin-left: 70%; width: 100%; z-index: 9999;}
+    50% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 0%; width: 100%;}
+   }
+   @-o-keyframes smallr {
+    100% {margin-left: 70%; width: 100%; z-index: 9999;}
+    50% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 0%; width: 100%;}
+   }
+   @keyframes smallr {
+    100% {margin-left: 70%; width: 100%; z-index: 9999;}
+    50% {margin-left: 0%; width: 25%;} 
+    0% {margin-left: 0%; width: 100%;}
+   }
