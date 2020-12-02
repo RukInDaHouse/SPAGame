@@ -76,7 +76,6 @@
   display: inline-block;
   position: absolute;
   text-align: center;
-
 }
 
 .full__screen {
@@ -100,41 +99,85 @@
   transform: translate(-50%, 0%);
   background: #000;
   max-width: 1440px;
-  min-width: 1024px; 
+  min-width: 1024px;
   white-space: nowrap;
   overflow: hidden;
   z-index: 99999!important;
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   background: #FF882A;
-  padding: 0;
-  margin: 0; 
+  padding-right: 120px;
+  margin: 0;
   position: fixed;
   left: 0;
   top: 0;
 }
 
+.wrap-logo {
+  display: flex;
+  align-items: center;
+ }
+
+header a {
+  color: #212121;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+header a.active {
+  background-color: #FBC02D;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1440px) {
 
   header {
-  height: 150px;
-}
+    height: 150px;
+  }
 
-.container {
-  margin-top: 150px;
+  .container {
+    margin-top: 150px;
   }
 }
 
 @media screen and (max-width: 1023px) {
 
   header {
-  height: 120px;
-}
+    height: 120px;
+  }
 
-.container {
-  display: none;
+  .container {
+    display: none;
   }
 }
 
@@ -153,113 +196,182 @@ header {
   background: crimson;
 }
 
-  @-webkit-keyframes flashslowest {
-    100% {opacity: 1;} 
-    0% {opacity: 0;}
-   }
-   @-moz-keyframes flashslowest {
-    100% {opacity: 1;} 
-    50% {opacity: 0;}
-   }
-   @-o-keyframes flashslowest {
-    100% {opacity: 1;} 
-    50% {opacity: 0;}
-   }
-   @keyframes flashslowest {
-    100% {opacity: 1;} 
-    0% {opacity: 0;}
-   }
+@-webkit-keyframes flashslowest {
+  100% {
+    opacity: 1;
+  }
 
-  @-webkit-keyframes flashfast {
-    100% {opacity: 1;} 
-    0% {opacity: 0;}
-   }
-   @-moz-keyframes flashfast {
-    100% {opacity: 1;} 
-    50% {opacity: 0;}
-   }
-   @-o-keyframes flashfast {
-    100% {opacity: 1;} 
-    50% {opacity: 0;}
-   }
-   @keyframes flashfast {
-    100% {opacity: 1;} 
-    0% {opacity: 0;}
-   }
+  0% {
+    opacity: 0;
+  }
+}
 
-  @-webkit-keyframes flashfast {
-    100% {opacity: 1;} fast
-    0% {opacity: 0;}
-   }
-   @-moz-keyframes flashfast {
-    100% {opacity: 1;} 
-    50% {opacity: 0;}
-   }
-   @-o-keyframes flashfast {
-    100% {opacity: 1;} 
-    50% {opacity: 0;}
-   }
-   @keyframes flashfast {
-    100% {opacity: 1;} 
-    0% {opacity: 0;}
-   }
+@-moz-keyframes flashslowest {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flashslowest {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flashslowest {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  fast
+    0% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flashfast {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
 
 .flashslow {
-    -webkit-animation-name: flashslow;
-    -moz-animation-name: flashslow;
-    -o-animation-name: flashslow;
-    animation-name: flashslow;
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    -o-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: flashslow;
+  -moz-animation-name: flashslow;
+  -o-animation-name: flashslow;
+  animation-name: flashslow;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .flashfast {
-    -webkit-animation-name: flashfast;
-    -moz-animation-name: flashfast;
-    -o-animation-name: flashfast;
-    animation-name: flashfast;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: flashfast;
+  -moz-animation-name: flashfast;
+  -o-animation-name: flashfast;
+  animation-name: flashfast;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .flashslowest {
-    -webkit-animation-name: flashslowest;
-    -moz-animation-name: flashslowest;
-    -o-animation-name: flashslowest;
-    animation-name: flashslowest;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: flashslowest;
+  -moz-animation-name: flashslowest;
+  -o-animation-name: flashslowest;
+  animation-name: flashslowest;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .backgroundfar {
   z-index: 10!important;
   position: absolute;
   width: 100%;
-
 }
 
 .backgroundclose {
@@ -296,93 +408,242 @@ header {
 }
 
 .small {
-    -webkit-animation-name: smallb;
-    -moz-animation-name: smallb;
-    -o-animation-name: smallb;
-    animation-name: smallb;
-    -webkit-animation-duration: 4s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: smallb;
+  -moz-animation-name: smallb;
+  -o-animation-name: smallb;
+  animation-name: smallb;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
-  @-webkit-keyframes smallb {
-    100% {width: 25%;} 
-    0% {width: 100%;}
-   }
-   @-moz-keyframes smallb {
-    100% {width: 25%;} 
-    0% {width: 100%;}
-   }
-   @-o-keyframes smallb {
-    100% {width: 25%;} 
-    0% {width: 100%;}
-   }
-   @keyframes smallb {
-    100% {width: 100%; }
-    25% {margin: 0%;}
-    25% {width: 25%;} 
-    0% {width: 100%;}
-   }
 
-   .smallleft {
-    -webkit-animation-name: smalll;
-    -moz-animation-name: smalll;
-    -o-animation-name: smalll;
-    animation-name: smalll;
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-  @-webkit-keyframes smalll {
-    100% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 70%; width: 100%;}
-   }
-   @-moz-keyframes smalll {
-    100% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 70%; width: 100%;}
-   }
-   @-o-keyframes smalll {
-    100% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 70%; width: 100%;}
-   }
-   @keyframes smalll {
-    100% {left: 0%; width: 100%; z-index: 9999;}
-    75% {margin-left: 0%; width: 50%;}
-    50% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 0%; width: 100%;}
-   }
+@-webkit-keyframes smallb {
+  100% {
+    width: 100%;
+    margin-left: -100%;
+  }
 
-   .smallright {
-    -webkit-animation-name: smallr;
-    -moz-animation-name: smallr;
-    -o-animation-name: smallr;
-    animation-name: smallr;
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  25% {
+    width: 25%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
 }
-  @-webkit-keyframes smallr {
-    100% {margin-left: 70%; width: 100%; z-index: 9999;}
-    50% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 0%; width: 100%;}
-   }
-   @-moz-keyframes smallr {
-    100% {margin-left: 70%; width: 100%; z-index: 9999;}
-    50% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 0%; width: 100%;}
-   }
-   @-o-keyframes smallr {
-    100% {margin-left: 70%; width: 100%; z-index: 9999;}
-    50% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 0%; width: 100%;}
-   }
-   @keyframes smallr {
-    100% {margin-left: 70%; width: 100%; z-index: 9999;}
-    50% {margin-left: 0%; width: 25%;} 
-    0% {margin-left: 0%; width: 100%;}
-   }
+
+@-moz-keyframes smallb {
+  100% {
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  25% {
+    width: 25%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@-o-keyframes smallb {
+  100% {
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  25% {
+    width: 25%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@keyframes smallb {
+  100% {
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  25% {
+    width: 25%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+.smallleft {
+  -webkit-animation-name: smalll;
+  -moz-animation-name: smalll;
+  -o-animation-name: smalll;
+  animation-name: smalll;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes smalll {
+  100% {
+    left: 0%;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  25% {
+    width: 25%;
+    margin-left: 10%;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes smalll {
+  100% {
+    left: 0%;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  25% {
+    width: 25%;
+    margin-left: 10%;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@-o-keyframes smalll {
+  100% {
+    left: 0%;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  25% {
+    width: 25%;
+    margin-left: 10%;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@keyframes smalll {
+  100% {
+    left: 0%;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  25% {
+    width: 25%;
+    margin-left: 10%;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+.smallright {
+  -webkit-animation-name: smallr;
+  -moz-animation-name: smallr;
+  -o-animation-name: smallr;
+  animation-name: smallr;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes smallr {
+  100% {
+    width: 100%;
+    margin-left: 100%;
+  }
+
+  25% {
+    width: 25%;
+    right: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes smallr {
+  100% {
+    width: 100%;
+    margin-left: 100%;
+  }
+
+  25% {
+    width: 25%;
+    right: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@-o-keyframes smallr {
+  100% {
+    width: 100%;
+    margin-left: 100%;
+  }
+
+  25% {
+    width: 25%;
+    right: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
+@keyframes smallr {
+  100% {
+    width: 100%;
+    margin-left: 100%;
+  }
+
+  25% {
+    width: 25%;
+    right: 0;
+    margin-left: 0;
+  }
+
+  0% {
+    width: 100%;
+  }
+}
+
