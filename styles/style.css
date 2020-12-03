@@ -408,242 +408,85 @@ nav {
 }
 
 .small {
-  -webkit-animation-name: smallb;
-  -moz-animation-name: smallb;
-  -o-animation-name: smallb;
-  animation-name: smallb;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+    -webkit-animation-name: smallb;
+    -moz-animation-name: smallb;
+    -o-animation-name: smallb;
+    animation-name: smallb;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
 }
+  @-webkit-keyframes smallb {
+    100% {width: 25%; left: 0; margin-left: 0;} 
+    0% {width: 100%; }
+   }
+   @-moz-keyframes smallb {
+    100% {width: 25%; left: 0; margin-left: 0;} 
+    0% {width: 100%; }
+   }
+   @-o-keyframes smallb {
+    100% {width: 25%; left: 0; margin-left: 0;} 
+    0% {width: 100%; }
+   }
+   @keyframes smallb {
+    100% {width: 25%; left: 0; margin-left: 0;} 
+    0% {width: 100%; }
+   }
 
-@-webkit-keyframes smallb {
-  100% {
-    width: 100%;
-    margin-left: -100%;
-  }
-
-  25% {
-    width: 25%;
-    left: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
+   .smallleft {
+    -webkit-animation-name: smalll;
+    -moz-animation-name: smalll;
+    -o-animation-name: smalll;
+    animation-name: smalll;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
 }
+  @-webkit-keyframes smalll {
+    100% {width: 25%;} 
+    0% {width: 100%; margin-left: 75%;}
+   }
+   @-moz-keyframes smalll {
+    100% {width: 25%;} 
+    0% {width: 100%; margin-left: 75%;}
+   }
+   @-o-keyframes smalll {
+    100% {width: 25%;} 
+    0% {width: 100%; margin-left: 75%;}
+   }
+   @keyframes smalll {
+    100% {width: 25%;} 
+    0% {width: 100%; margin-left: 75%;}
+   }
 
-@-moz-keyframes smallb {
-  100% {
-    width: 100%;
-    margin-left: -100%;
-  }
-
-  25% {
-    width: 25%;
-    left: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
+   .smallright {
+    -webkit-animation-name: smallr;
+    -moz-animation-name: smallr;
+    -o-animation-name: smallr;
+    animation-name: smallr;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
 }
-
-@-o-keyframes smallb {
-  100% {
-    width: 100%;
-    margin-left: -100%;
-  }
-
-  25% {
-    width: 25%;
-    left: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@keyframes smallb {
-  100% {
-    width: 100%;
-    margin-left: -100%;
-  }
-
-  25% {
-    width: 25%;
-    left: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-.smallleft {
-  -webkit-animation-name: smalll;
-  -moz-animation-name: smalll;
-  -o-animation-name: smalll;
-  animation-name: smalll;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes smalll {
-  100% {
-    left: 0%;
-    width: 100%;
-    z-index: 9999;
-  }
-
-  25% {
-    width: 25%;
-    margin-left: 10%;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@-moz-keyframes smalll {
-  100% {
-    left: 0%;
-    width: 100%;
-    z-index: 9999;
-  }
-
-  25% {
-    width: 25%;
-    margin-left: 10%;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@-o-keyframes smalll {
-  100% {
-    left: 0%;
-    width: 100%;
-    z-index: 9999;
-  }
-
-  25% {
-    width: 25%;
-    margin-left: 10%;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@keyframes smalll {
-  100% {
-    left: 0%;
-    width: 100%;
-    z-index: 9999;
-  }
-
-  25% {
-    width: 25%;
-    margin-left: 10%;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-.smallright {
-  -webkit-animation-name: smallr;
-  -moz-animation-name: smallr;
-  -o-animation-name: smallr;
-  animation-name: smallr;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes smallr {
-  100% {
-    width: 100%;
-    margin-left: 100%;
-  }
-
-  25% {
-    width: 25%;
-    right: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@-moz-keyframes smallr {
-  100% {
-    width: 100%;
-    margin-left: 100%;
-  }
-
-  25% {
-    width: 25%;
-    right: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@-o-keyframes smallr {
-  100% {
-    width: 100%;
-    margin-left: 100%;
-  }
-
-  25% {
-    width: 25%;
-    right: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
-@keyframes smallr {
-  100% {
-    width: 100%;
-    margin-left: 100%;
-  }
-
-  25% {
-    width: 25%;
-    right: 0;
-    margin-left: 0;
-  }
-
-  0% {
-    width: 100%;
-  }
-}
-
+  @-webkit-keyframes smallr {
+    100% {width: 25%; right: 0; margin-left: 0;} 
+    0% {width: 100%; margin-left: 150%;}
+   }
+   @-moz-keyframes smallr {
+    100% {width: 25%; right: 0; margin-left: 0;} 
+    0% {width: 100%; margin-left: 150%;}
+   }
+   @-o-keyframes smallr {
+    100% {width: 25%; right: 0; margin-left: 0;} 
+    0% {width: 100%; margin-left: 150%;}
+   }
+   @keyframes smallr {
+    100% {width: 25%; right: 0; margin-left: 0;} 
+    0% {width: 100%; margin-left: 150%;}
+   }
