@@ -1,410 +1,408 @@
 #map {
-  left: 0%;
+    left: 0;
 }
 
 #map2 {
-  left: 25%;
+    left: 25%;
 }
 
 #map3 {
-  left: 50%;
+    left: 50%;
 }
 
 #map4 {
-  left: 75%;
+    left: 75%;
 }
 
 .lefttransition {
-  width: 100%!important;
-  margin-left: -100%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: -100%;
+    transition: all 1s !important;
 }
 
 .lefttransitionbefore {
-  width: 100%!important;
-  margin-left: -100%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: -100%;
+    transition: all 1s !important;
 }
 
 .lefttransition2 {
-  width: 100%!important;
-  margin-left: -100%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: -100%;
+    transition: all 1s !important;
 }
 
 .righttransition {
-  width: 100%!important;
-  margin-left: 75%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: 75%;
+    transition: all 1s !important;
 }
 
 .righttransition2 {
-  width: 100%!important;
-  margin-left: 50%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: 50%;
+    transition: all 1s !important;
 }
 
 .righttransition3 {
-  width: 100%!important;
-  margin-left: 25%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: 25%;
+    transition: all 1s !important;
 }
 
 .rightshift3 {
-  width: 100%!important;
-  margin-left: -75%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: -75%;
+    transition: all 1s !important;
 }
 
 .rightshift {
-  width: 100%!important;
-  margin-left: -50%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: -50%;
+    transition: all 1s !important;
 }
 
 .rightshift2 {
-  width: 100%!important;
-  margin-left: -25%;
-  transition: all 1s!important;
+    width: 100% !important;
+    margin-left: -25%;
+    transition: all 1s !important;
 }
 
 .map {
-  height: 25%;
-  width: 25%;
-  transition: width 10s, height 10s;
-  transform: translate(-50%. -50%);
-  display: inline-block;
-  position: absolute;
-  text-align: center;
+    height: 25%;
+    width: 25%;
+    transition: width 10s, height 10s;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
 .full__screen {
-  width: 100%!important;
-  transition: all 1s!important;
+    width: 100% !important;
+    transition: all 1s !important;
 }
 
 .small__screen {
-  width: 25%!important;
-  transition: all 1s!important;
+    width: 25% !important;
+    transition: all 1s !important;
 }
 
 .map img {
-  width: 100%;
+    width: 100%;
 }
 
 .container {
-  position: relative;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0%);
-  background: #000;
-  max-width: 1440px;
-  min-width: 1024px;
-  white-space: nowrap;
-  overflow: hidden;
-  z-index: 99999!important;
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    background: #000;
+    max-width: 1440px;
+    min-width: 1024px;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 9999 !important;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  background: #FF882A;
-  padding-right: 120px;
-  margin: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #FF882A;
+    padding-right: 120px;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
 }
 
 .wrap-logo {
-  display: flex;
-  align-items: center;
- }
+    display: flex;
+    align-items: center;
+}
 
 header a {
-  color: #212121;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  border-radius: 4px;
+    color: #212121;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
 }
 
 header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 header a:hover {
-  background-color: #FBC02D;
-  color: #212121;
+    background-color: #FBC02D;
+    color: #212121;
 }
 
 header a.active {
-  background-color: #FBC02D;
+    background-color: #FBC02D;
 }
 
 nav {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1440px) {
 
-  header {
-    height: 150px;
-  }
+    header {
+        height: 150px;
+    }
 
-  .container {
-    margin-top: 150px;
-  }
+    .container {
+        margin-top: 150px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
 
-  header {
-    height: 120px;
-  }
+    header {
+        height: 120px;
+    }
 
-  .container {
-    display: none;
-  }
+    .container {
+        display: none;
+    }
 }
 
 .container .ratio16-9 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .container:before {
-  content: '';
-  display: block;
-  padding-top: 56.25%;
-  background: crimson;
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+    background: crimson;
 }
 
 @-webkit-keyframes flashslowest {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes flashslowest {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  50% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 @-o-keyframes flashslowest {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  50% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 @keyframes flashslowest {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  0% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
-
-  0% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
-
-  0% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
-
-  fast
     0% {
-    opacity: 0;
-  }
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes flashfast {
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  50% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 @-o-keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  50% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 @keyframes flashfast {
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes flashfast {
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flashfast {
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flashfast {
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes flashfast {
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
 }
 
 .flashslow {
-  -webkit-animation-name: flashslow;
-  -moz-animation-name: flashslow;
-  -o-animation-name: flashslow;
-  animation-name: flashslow;
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  -o-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  opacity: 0;
-  animation-fill-mode: forwards;
+    -webkit-animation-name: flashslow;
+    -moz-animation-name: flashslow;
+    -o-animation-name: flashslow;
+    animation-name: flashslow;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .flashfast {
-  -webkit-animation-name: flashfast;
-  -moz-animation-name: flashfast;
-  -o-animation-name: flashfast;
-  animation-name: flashfast;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
+    -webkit-animation-name: flashfast;
+    -moz-animation-name: flashfast;
+    -o-animation-name: flashfast;
+    animation-name: flashfast;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .flashslowest {
-  -webkit-animation-name: flashslowest;
-  -moz-animation-name: flashslowest;
-  -o-animation-name: flashslowest;
-  animation-name: flashslowest;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
+    -webkit-animation-name: flashslowest;
+    -moz-animation-name: flashslowest;
+    -o-animation-name: flashslowest;
+    animation-name: flashslowest;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .backgroundfar {
-  z-index: 10!important;
-  position: absolute;
-  width: 100%;
+    z-index: 10 !important;
+    position: absolute;
+    width: 100%;
 }
 
 .backgroundclose {
-  z-index: 0!important;
-  position: absolute;
-  width: 100%;
+    z-index: 0 !important;
+    position: absolute;
+    width: 100%;
 }
 
 .arrowcontainer {
-  text-align: center;
-  width: 33%;
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  position: absolute;
-  right: 5%;
-  bottom: 15%;
-  z-index: 999;
+    text-align: center;
+    width: 33%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    z-index: 999;
 }
 
 .arrowbtn img {
-  float: right;
+    float: right;
 }
 
 .arrowbtn {
-  position: absolute;
-  right: 3%;
-  bottom: 15%;
-  color: white;
-  width: 256px;
-  height: 64px;
-  line-height: 64px;
-  transition: all 0.3s;
+    position: absolute;
+    right: 3%;
+    bottom: 15%;
+    color: white;
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
 }
 
 .small {
@@ -418,24 +416,56 @@ nav {
     animation-duration: 10s;
     animation-fill-mode: forwards;
 }
-  @-webkit-keyframes smallb {
-    100% {width: 25%; left: 0; margin-left: 0;} 
-    0% {width: 100%; }
-   }
-   @-moz-keyframes smallb {
-    100% {width: 25%; left: 0; margin-left: 0;} 
-    0% {width: 100%; }
-   }
-   @-o-keyframes smallb {
-    100% {width: 25%; left: 0; margin-left: 0;} 
-    0% {width: 100%; }
-   }
-   @keyframes smallb {
-    100% {width: 25%; left: 0; margin-left: 0;} 
-    0% {width: 100%; }
-   }
 
-   .smallleft {
+@-webkit-keyframes smallb {
+    100% {
+        width: 25%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes smallb {
+    100% {
+        width: 25%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+    }
+}
+
+@-o-keyframes smallb {
+    100% {
+        width: 25%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+    }
+}
+
+@keyframes smallb {
+    100% {
+        width: 25%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+    }
+}
+
+.smallleft {
     -webkit-animation-name: smalll;
     -moz-animation-name: smalll;
     -o-animation-name: smalll;
@@ -446,24 +476,52 @@ nav {
     animation-duration: 10s;
     animation-fill-mode: forwards;
 }
-  @-webkit-keyframes smalll {
-    100% {width: 25%;} 
-    0% {width: 100%; margin-left: 75%;}
-   }
-   @-moz-keyframes smalll {
-    100% {width: 25%;} 
-    0% {width: 100%; margin-left: 75%;}
-   }
-   @-o-keyframes smalll {
-    100% {width: 25%;} 
-    0% {width: 100%; margin-left: 75%;}
-   }
-   @keyframes smalll {
-    100% {width: 25%;} 
-    0% {width: 100%; margin-left: 75%;}
-   }
 
-   .smallright {
+@-webkit-keyframes smalll {
+    100% {
+        width: 25%;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 75%;
+    }
+}
+
+@-moz-keyframes smalll {
+    100% {
+        width: 25%;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 75%;
+    }
+}
+
+@-o-keyframes smalll {
+    100% {
+        width: 25%;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 75%;
+    }
+}
+
+@keyframes smalll {
+    100% {
+        width: 25%;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 75%;
+    }
+}
+
+.smallright {
     -webkit-animation-name: smallr;
     -moz-animation-name: smallr;
     -o-animation-name: smallr;
@@ -474,19 +532,160 @@ nav {
     animation-duration: 10s;
     animation-fill-mode: forwards;
 }
-  @-webkit-keyframes smallr {
-    100% {width: 25%; right: 0; margin-left: 0;} 
-    0% {width: 100%; margin-left: 150%;}
-   }
-   @-moz-keyframes smallr {
-    100% {width: 25%; right: 0; margin-left: 0;} 
-    0% {width: 100%; margin-left: 150%;}
-   }
-   @-o-keyframes smallr {
-    100% {width: 25%; right: 0; margin-left: 0;} 
-    0% {width: 100%; margin-left: 150%;}
-   }
-   @keyframes smallr {
-    100% {width: 25%; right: 0; margin-left: 0;} 
-    0% {width: 100%; margin-left: 150%;}
-   }
+
+@-webkit-keyframes smallr {
+    100% {
+        width: 25%;
+        right: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 150%;
+    }
+}
+
+@-moz-keyframes smallr {
+    100% {
+        width: 25%;
+        right: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 150%;
+    }
+}
+
+@-o-keyframes smallr {
+    100% {
+        width: 25%;
+        right: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 150%;
+    }
+}
+
+@keyframes smallr {
+    100% {
+        width: 25%;
+        right: 0;
+        margin-left: 0;
+    }
+
+    0% {
+        width: 100%;
+        margin-left: 150%;
+    }
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+    float: left;
+    transition: all 1s !important;
+
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1 {
+        width: 8.33333333%;
+    }
+
+    .col-lg-2 {
+        width: 16.66666667%;
+        transition: all 1s !important;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33333333%;
+        transition: all 1s !important;
+    }
+
+    .col-lg-5 {
+        width: 41.66666667%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33333333%;
+    }
+
+    .col-lg-8 {
+        width: 66.66666667%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33333333%;
+    }
+
+    .col-lg-11 {
+        width: 91.66666667%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
