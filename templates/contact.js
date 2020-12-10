@@ -1,26 +1,29 @@
 let contact = `
 
-  <header></header>
-
 <div class="container">
-    <div class="ratio16-9">
+    <div class="ratio16-9 zoom-out-from-plane-to-log">
 
-        <div id="map" class="map small">
-            <img src="./images/logwithoutclouds.svg" />
+        <div class="background-01-01 ">
+            <img src="./images/01-01.svg" /><br>
+            <img src="./images/02-01.svg" /><br>
+            <img src="./images/03-01.svg" />
         </div>
 
-        <div id="map2" class="map smallleft">
-            <img src="./images/logwithoutclouds.svg" />
+        <div class="background-01-02 ">
+            <img src="./images/01-02.svg" /><br>
+            <img src="./images/02-02.svg" /><br>
+            <img src="./images/03-02.svg" />
         </div>
 
-        <div id="map3" class="map smallright">
-            <img src="./images/logwithoutclouds.svg" />
+        <div class="background-01-03 ">
+            <img src="./images/01-03.svg" /><br>
+            <img src="./images/02-03.svg" /><br>
+            <img src="./images/03-03.svg" />
         </div>
+    </div>
 
-        <div id="map4" class="map smallright">
-            <img src="./images/logwithoutclouds.svg" />
-        </div>
-    
+    <div class="log_block zoom-in-log">
+        <img src="./images/part-02.svg" />
     </div>
 </div>
 `
