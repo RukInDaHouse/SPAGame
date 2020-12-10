@@ -95,6 +95,7 @@ nav {
     white-space: nowrap;
     overflow: hidden;
     margin-top: 150px;
+    z-index: 5;
 }
 
 .container .ratio16-9 {
@@ -369,19 +370,6 @@ nav {
 .small__screen {
     width: 25% !important;
     transition: all 1s !important;
-}
-
-.container {
-    position: relative;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0%);
-    background: #000;
-    max-width: 1440px;
-    min-width: 1024px;
-    white-space: nowrap;
-    overflow: hidden;
-    z-index: 99999 !important;
 }
 
 header {
