@@ -35,7 +35,7 @@ let home = `
         </div>
     </div>
 
- <div class="clouds">
+ <div class="clouds map">
 
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
     height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
