@@ -26,4 +26,8 @@ let contact = `
         <img src="./images/part-02.svg" />
     </div>
 </div>
+
+<audio id="theme" autoplay="autoplay">
+     <source src="./volume/ep2.mp3" />     
+ </audio>
 `
