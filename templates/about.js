@@ -11,11 +11,14 @@ let about = `
             <div class="arrowcontainer flashfast">
                 <div class="arrowbtn">
                     <img src="./images/button.svg">
+                </div>
             </div>
-        </div>
         </a>
 
     </div>
 </div>
 
+<audio id="theme" autoplay="autoplay">
+    <source src="./volume/ep2.mp3" />     
+ </audio>
 `
