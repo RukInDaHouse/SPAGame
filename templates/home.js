@@ -18,7 +18,7 @@ let home = `
         
         <div class="background-01-01">
             <img src="./images/01-01-withoutplane.svg" /><br>
-            <img src="./images/02-01-withoutplane.svg" /><br>
+            <img src="./images/02-01.svg" /><br>
             <img src="./images/03-01.svg" />
         </div>
         

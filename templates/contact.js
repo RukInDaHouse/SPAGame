@@ -2,7 +2,9 @@ let contact = `
 
 <div class="container">
     <div class="ratio16-9 zoom-out-from-plane-to-log">
-
+        <div class="mapbackgroundimage">
+            <img src="./images/backgroundmap.svg" />
+        </div>
         <div class="background-01-01 ">
             <img src="./images/01-01.svg" /><br>
             <img src="./images/02-01.svg" /><br>

@@ -14,14 +14,67 @@
 
 <body>
     <header>
-        <div class="wrap-logo">
-            <a href="#logo" class="logo"></a>
+        <div class='headercontainer'>
+            <div class='mobile_nav'>
+                <button class='burger' title='Open and close menu'>
+                <span class='mobile_nav__label'>Open and close menu</span>
+                <div class='top stripe'></div>
+                <div class='middle stripe'></div>
+                <div class='bottom stripe'></div>
+                </button>
+            </div>
+        <div class='mobile_menu'>
+            <nav>
+                <ul>
+                    <li class='visited'>
+                        <a href='/home' class="menu__link r-link">Карты</a>
+                    </li>
+                    <li>
+                        <a href='/toplist' class="menu__link r-link">Обратная связь</a>
+                    </li>
+                    <li>
+                        <a href='/forum' class="menu__link r-link">О нас</a>
+                    </li>
+                    <li>
+                        <a href='/blog' class="menu__link r-link">Истории</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </nav>
+        <div class='logo'>
+            <span>One</span>
+        </div>
+            <nav role="navigation" class="primary-navigation menu head_nav withoutline">
+                <ul class="r-list">
+                    <li>
+                        <a class="menu__link r-link" href="#">Карты &dtrif;</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a class="menu__link r-link" href="#">Карта</a>
+                            </li>
+                            <li>
+                                <a class="menu__link r-link" href="#">Карта</a>
+                            </li>
+                            <li>
+                                <a class="menu__link r-link" href="#">Карта</a>
+                            </li>
+                            <li>
+                                <a class="menu__link r-link" href="#">Карта</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu__link r-link" href='/toplist'>Обратная связь</a>
+                    </li>
+                    <li>
+                        <a class="menu__link r-link" href='/forum'>О нас</a>
+                    </li>
+                    <li>
+                        <a class="menu__link r-link" href='/blog'>Истории</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
 <div id="root"></div>
