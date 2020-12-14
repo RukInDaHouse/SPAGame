@@ -13,6 +13,7 @@ header .headercontainer {
   transition: 0.3s;
   position: fixed;
   top: 0;
+  
 }
 
 .dropdown {
@@ -1648,3 +1649,5 @@ svg {
         transform: translateX(-100%);
     }
 }
+
+

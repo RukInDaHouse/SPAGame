@@ -6,6 +6,9 @@ let about = `
         <div class="backgroundclose">
             <img src="./images/part-01.svg" />
         </div>
+        <div class="backgroundclose">
+            <img src="./images/planeman.svg" />
+        </div>
 
         <a href="#" onclick="setTimeout(function(){ onNavigate('/contact'); }, 1550); return false;">
             <div class="arrowcontainer flashfast">
