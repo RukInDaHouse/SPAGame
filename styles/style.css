@@ -1479,7 +1479,12 @@ ul li ul li a {
 }
 
 .invisible {
-    display: none;
+    display: none!important;
+}
+
+.zerotop {
+    top: 0!important;
+    margin-top: 0!important;
 }
 
 svg {
