@@ -362,28 +362,28 @@ ul li ul li a {
 }
 
 @media screen and (max-width: 1023px) {
-    .container {
+  .container {
         display: none;
-    }
+  }
 }
 
 .mapcontainer {
- margin-top: 100px!important; 
+  margin-top: 100px!important; 
 }
 
 .container {
-    position: relative;
-    left: 50%;
-    cursor: pointer;
-    margin-right: -50%;
-    transform: translate(-50%, 0%);
-    max-width: 1440px;
-    min-width: 1024px;
-    overflow: hidden;
-    margin-top: 0px;
-    top: 0;
-    width: 100vw;
-    z-index: 5;
+  position: absolute;
+  left: 50%;
+  cursor: pointer;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+  max-width: 1440px;
+  min-width: 1024px;
+  overflow: hidden;
+  margin-top: 0px;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
 }
 
 .container .ratio16-9 {
@@ -1003,7 +1003,7 @@ ul li ul li a {
 
     50% {
         width: 500%;
-        top: -100%;
+        top: -250%;
         left: -30%;
     }
 
@@ -1069,7 +1069,7 @@ ul li ul li a {
 
     50% {
         width: 500%;
-        top: -100%;
+        top: -250%;
         left: -30%;
     }
 
@@ -1891,3 +1891,7 @@ body.active .background6 {
           transform: scale(8);
 }
 
+.firstmap {
+  height: 10vh!important;
+  width: 10%;
+}
