@@ -2,14 +2,31 @@ var map = document.getElementsByClassName('map');
 var helloscreen = document.getElementsByClassName('helloscreen');
 var header = document.getElementsByClassName('headercontainer');
 var container = document.getElementsByClassName('container');
-    map[2].onclick = function() {
-    helloscreen[0].classList.add('invisible'),
-    map[0].classList.add('zoom-in'),
+
+map[2].onclick = function() {
+    
+    helloscreen[0].classList.add('invisible');
+    map[0].classList.add('zoom-in');
     map[3].classList.add('invisible');
     map[4].classList.add('zoom-in-plane');
     header[0].classList.add('invisible');
+    setTimeout(function(){
+    	container[0].classList.add('invisible');
+    }, 5000);
+    setTimeout(function(){
+    	container[1].classList.remove('invisible');
+    }, 5000);
+
+    setTimeout(function(){
+    	container[1].classList.add('invisible');
+    }, 7000);
+	setTimeout(function(){
+    	container[2].classList.remove('invisible');
+    }, 7000);
 }
 
-    map[0].onclick = function() {
+map[0].onclick = function() {
+    
     helloscreen[0].classList.add('flashmodal');
 }
+
