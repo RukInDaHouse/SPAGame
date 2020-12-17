@@ -1061,15 +1061,14 @@ ul li ul li a {
 
 @keyframes zoomout {
     100% {
-        width: 570%;
-        height: 570%;
-        top: -320%;
-        left: -40%;
+        width: 500%;
+        top: -260%;
+        left: -30%;
     }
 
     50% {
         width: 500%;
-        top: -250%;
+        top: -260%;
         left: -30%;
     }
 
@@ -1136,8 +1135,8 @@ ul li ul li a {
 @keyframes zoomin {
     100% {
         width: 900%;
-        top: -250%;
-        left: -60%;
+        top: -265%;
+        left: -58%;
     }
 
     0% {
@@ -1642,18 +1641,6 @@ svg {
     color: #FF882A;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 h1 {
   padding-bottom: 40px;
   text-transform: uppercase;
@@ -1681,6 +1668,7 @@ p:last-of-type {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
+          overflow: hidden;
 }
 
 .btn {
@@ -1744,6 +1732,8 @@ p:last-of-type {
           justify-content: center;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  overflow: hidden;
+
 }
 .popup-inside {
   position: absolute;
@@ -1894,4 +1884,121 @@ body.active .background6 {
 .firstmap {
   height: 10vh!important;
   width: 10%;
+}
+
+.fullplaneman {
+  height: 100vh;
+  width: 5%;
+  left: 0%;
+  position: absolute;
+  z-index: 999;
+  top: 33%;
+}
+
+.zoom-out-planeman {
+    -webkit-animation-name: zoomoutplaneman;
+    -moz-animation-name: zoomoutplaneman;
+    -o-animation-name: zoomoutplaneman;
+    animation-name: zoomoutplaneman;
+    -webkit-animation-duration: 7s;
+    -moz-animation-duration: 7s;
+    -o-animation-duration: 7s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes zoomoutplaneman {
+    100% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    50% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    0% {
+        height: 40%;
+        width: 40%;
+    }
+}
+@-moz-keyframes zoomoutplaneman {
+    100% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    50% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    0% {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@-o-keyframes zoomoutplaneman {
+    100% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    50% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    0% {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@keyframes zoomoutplaneman {
+    100% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    50% {
+        height: 40%;
+        width: 40%;
+        top: -220%;
+        left: 0%;
+
+    }
+
+    0% {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+.map:nth-child(1) {
+  margin-top: 7%;
 }
