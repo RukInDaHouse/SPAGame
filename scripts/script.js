@@ -11,6 +11,11 @@ map[2].onclick = function() {
     map[3].classList.add('invisible');
     map[4].classList.add('zoom-in-plane');
     header[0].classList.add('invisible');
+    function soundClick() {
+    var audio = new Audio(); 
+    audio.src = './volume/ep1.mp3'; 
+    audio.autoplay = true; 
+}
     setTimeout(function(){
     	container[0].classList.add('invisible');
     }, 5000);
