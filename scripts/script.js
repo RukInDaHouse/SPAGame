@@ -2,6 +2,7 @@ var map = document.getElementsByClassName('map');
 var helloscreen = document.getElementsByClassName('helloscreen');
 var header = document.getElementsByClassName('headercontainer');
 var container = document.getElementsByClassName('container');
+var audio = document.getElementsByTagName('audio');
 
 map[2].onclick = function() {
     
@@ -19,10 +20,10 @@ map[2].onclick = function() {
 
     setTimeout(function(){
     	container[1].classList.add('invisible');
-    }, 7000);
+    }, 38000);
 	setTimeout(function(){
     	container[2].classList.remove('invisible');
-    }, 7000);
+    }, 38000);
 }
 
 map[0].onclick = function() {
