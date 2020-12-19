@@ -34,6 +34,9 @@ map[2].onclick = function() {
     setTimeout(function(){
         container[2].classList.remove('invisible');
     }, 38000);
+    setTimeout(function(){
+        container[3].classList.remove('invisible');
+    }, 39000);
 }
 
 map[0].onclick = function() {
