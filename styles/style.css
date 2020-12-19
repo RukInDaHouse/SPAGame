@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+       url("/fonts/Roboto.woff2") format("woff2"),
+       url("/fonts/Roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Robotolight"),
+       url("/fonts/Robotolight.woff2") format("woff2"),
+       url("/fonts/Robotolight.woff") format("woff");
+}
+
+body {
+   font-family: "Robotolight", "Arial", sans-serif;
+}
+
 img {
     width: 100%;
     line-height: 0;
