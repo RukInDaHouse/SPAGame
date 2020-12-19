@@ -4,6 +4,7 @@ var quizcardContainer = document.querySelector('.quizcard');
 var allCards = document.querySelectorAll('.quizcard--card');
 var nope = document.getElementById('nope');
 var love = document.getElementById('love');
+var cardtext = document.getElementsByClassName('cardtext');
 
 function initCards(card, index) {
   var newCards = document.querySelectorAll('.quizcard--card:not(.removed)');
@@ -19,58 +20,10 @@ function initCards(card, index) {
 
 initCards();
 
-allCards.forEach(function (el) {
-  var hammertime = new Hammer(el);
-
-  hammertime.on('pan', function (event) {
-    el.classList.add('moving');
-  });
-
-  hammertime.on('pan', function (event) {
-    if (event.deltaX === 0) return;
-    if (event.center.x === 0 && event.center.y === 0) return;
-
-    quizcardContainer.classList.toggle('quizcard_love', event.deltaX > 0);
-    quizcardContainer.classList.toggle('quizcard_nope', event.deltaX < 0);
-
-    var xMulti = event.deltaX * 0.03;
-    var yMulti = event.deltaY / 80;
-    var rotate = xMulti * yMulti;
-
-    event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
-  });
-
-  hammertime.on('panend', function (event) {
-    el.classList.remove('moving');
-    quizcardContainer.classList.remove('quizcard_love');
-    quizcardContainer.classList.remove('quizcard_nope');
-
-    var moveOutWidth = document.body.clientWidth;
-    var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
-
-    event.target.classList.toggle('removed', !keep);
-
-    if (keep) {
-      event.target.style.transform = '';
-    } else {
-      var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
-      var toX = event.deltaX > 0 ? endX : -endX;
-      var endY = Math.abs(event.velocityY) * moveOutWidth;
-      var toY = event.deltaY > 0 ? endY : -endY;
-      var xMulti = event.deltaX * 0.03;
-      var yMulti = event.deltaY / 80;
-      var rotate = xMulti * yMulti;
-
-      event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
-      initCards();
-    }
-  });
-});
-
 function createButtonListener(love) {
   return function (event) {
     var cards = document.querySelectorAll('.quizcard--card:not(.removed)');
-    var moveOutWidth = document.body.clientWidth * 1.5;
+    var moveOutWidth = document.body.clientWidth * 0.3;
 
     if (!cards.length) return false;
 
@@ -79,9 +32,9 @@ function createButtonListener(love) {
     card.classList.add('removed');
 
     if (love) {
-      card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+      card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(0deg)';
     } else {
-      card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+      card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(0deg)';
     }
 
     initCards();
@@ -95,3 +48,9 @@ var loveListener = createButtonListener(true);
 
 nope.addEventListener('click', nopeListener);
 love.addEventListener('click', loveListener);
+
+for(var i = 0; i < cardtext.length;i++){
+nope.onclick = function() {
+  cardtext[i].classList.remove('invisible');
+  }
+}
