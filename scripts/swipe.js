@@ -49,8 +49,6 @@ var loveListener = createButtonListener(true);
 nope.addEventListener('click', nopeListener);
 love.addEventListener('click', loveListener);
 
-for(var i = 0; i < cardtext.length;i++){
 nope.onclick = function() {
-  cardtext[i].classList.remove('invisible');
-  }
+  cardtext[0].classList.remove('invisible');
 }
