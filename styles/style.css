@@ -2247,7 +2247,7 @@ body.active .background6 {
 
 .card_text {
   width: 80%;
-  height: 50%;
+  height: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2257,15 +2257,30 @@ body.active .background6 {
 }
 
 .card_text p {
-  background: #FF882A;
-  margin-top: 6%;
-  margin-bottom: 6%;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #FF882A;
   border-radius: 3px;
   font-size: 1.6em;
-  word-break: keep-all;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+.quiz__answer .card_text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #FF882A;
+  border-radius: 3px;
+  font-size: 1.2em;
   text-align: center;
   font-weight: 500;
   position: relative;
@@ -2287,7 +2302,7 @@ body.active .background6 {
 .card_bottom {
   position: absolute;
   z-index: 5;
-  font-size: 45%;
+  font-size: 50%;
   border-radius: 3px;
   border: 1px solid #FF882A;
   background-color: white;
@@ -2308,3 +2323,4 @@ body.active .background6 {
 .card_bottom {
   bottom: -7px; 
 }
+
