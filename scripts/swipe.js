@@ -1,6 +1,6 @@
 'use strict';
 
-var quizcardContainer = document.querySelector('.quizcard');
+var quizcardContainer = document.querySelector('.quiz__container');
 var allCards = document.querySelectorAll('.quizcard--card');
 var nope = document.getElementById('nope');
 var love = document.getElementById('love');
