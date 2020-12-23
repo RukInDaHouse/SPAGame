@@ -3,6 +3,7 @@ var helloscreen = document.getElementsByClassName('helloscreen');
 var header = document.getElementsByClassName('headercontainer');
 var container = document.getElementsByClassName('container');
 var audio = document.getElementsByTagName('audio');
+var paw = document.getElementsByClassName('paw');
 
 map[2].onclick = function() {
     var audio = new Audio(); 
@@ -10,33 +11,71 @@ map[2].onclick = function() {
     audio.autoplay = true; 
     
     helloscreen[0].classList.add('invisible');
-    map[0].classList.add('zoom-in');
     map[3].classList.add('invisible');
     map[4].classList.add('zoom-in-plane');
     header[0].classList.add('invisible');
     
     setTimeout(function(){
-        container[0].classList.add('invisible');
+        map[0].classList.add('zoom-in');
+    }, 12000);
+
+    setTimeout(function(){
+        paw[0].classList.add('step__appear');
+    }, 1000);
+
+    setTimeout(function(){
+        paw[1].classList.add('step__appear');
+    }, 2000);
+
+    setTimeout(function(){
+        paw[2].classList.add('step__appear');
+    }, 3000);
+
+    setTimeout(function(){
+        paw[3].classList.add('step__appear');
+    }, 4000);
+
+    setTimeout(function(){
+        paw[4].classList.add('step__appear');
     }, 5000);
+
+    setTimeout(function(){
+        paw[5].classList.add('step__appear');
+    }, 6000);
+
+    setTimeout(function(){
+        paw[6].classList.add('step__appear');
+    }, 7000);
+
+    setTimeout(function(){
+        paw[7].classList.add('step__appear');
+    }, 8000);
+
+    setTimeout(function(){
+        container[0].classList.add('invisible');
+    }, 17000);
+
     setTimeout(function(){
         container[1].classList.remove('invisible');
-    }, 5000);
+    }, 17000);
 
     setTimeout(function(){
     var audio = new Audio(); 
     audio.src = 'volume/ep2.mp3'; 
     audio.autoplay = true;
-    }, 39000);
+    }, 44000);
 
     setTimeout(function(){
         container[1].classList.add('invisible');
-    }, 38000);
+    }, 43000);
+
     setTimeout(function(){
         container[2].classList.remove('invisible');
     }, 38000);
+
     setTimeout(function(){
         container[3].classList.remove('invisible');
-    }, 39000);
+    }, 44000);
 }
 
 map[0].onclick = function() {
