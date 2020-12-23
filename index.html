@@ -92,7 +92,8 @@
                         <div class="background background6"></div>
                     </div>
                 </div>
-                <div class="popup-content">
+                <div class="popup-content">                    <div class="inner_card">
+       
                     <div class="popup-content-wrapper">
                         <h1>Уважаемый герой!</h1>
                         <p>
@@ -107,7 +108,7 @@
                             <div onclick="soundClick()" class="map btn-5 btn">OK</div>
                         </a>
                     </div>
-                </div>
+                </div></div>
             </div>
         </div>
         <svg id="svg-sprite">
@@ -257,25 +258,42 @@
         <div class="mapbackgroundimage">
             <img src="./images/part-02.svg" />
         </div>
-        <div class="quizcard">
-  <div class="quizcard--cards">
-      <div class="quizcard">
-        <div class="inner_card">
-          <div class="card_top">Title Deed</div>
-          <div class="card_question_number">Fleet Street</div>
-          <div class="card_text">
-            <p>Rent</p>
-          </div>
-          <div class="card_bottom">episodedesign</div>  
-        </div>
-      </div>
-  </div>
+        <div class="quiz__container">
+            <div class="quizcard--cards">
+                <div class="quizcard--card">
+                  <div class="quiz__question quiz__card__side">
+                    <div class="inner_card">
+                      <div class="card_top">Как Выбрать проффесию?</div>
+                      <div class="card_question_number">Утверждение №1</div>
+                      <div class="card_text">
+                        <p>Рынок труда переполнен моей «будущей профессией»</p>
+                      </div>
+                      <div class="card_bottom">OneTwoGame</div>  
+                    </div>
+                  </div>
+                  
+                  <div class="quiz__answer quiz__card__side">
+                    <div class="inner_card">
+                      <div class="card_top">Как Выбрать проффесию?</div>
+                      <div class="card_text">
+                        <p>Действительно, выбранная тобой профессия, может быть широко представлена на рынке
+труда. Но тебе не следует бояться конкуренции. За большим количеством часто скрывается
+низкое качество. В любой профессии есть настоящие мастера своего дела и те, кто оказался
+там по ошибке. Выбирай профессию по душе и старайся достичь в ней высокого уровня.
+Работай над совершенствованием своих навыков, перенимай опыт у мастеров. В конечном
+итоге всегда выигрывают те, кому нравится свое дело.</p>
+                      </div>
+                      <div class="card_bottom">OneTwoGame</div>  
+                    </div>
+                  </div>
+                </div>
+            </div>
 
-  <div class="quizcard--buttons">
-    <button id="nope"><i class="fa fa-remove"></i></button>
-    <button id="love"><i class="fa fa-check"></i></button>
-  </div>
-</div>
+            <div class="quizcard--buttons">
+                <button id="nope"><i class="fa fa-remove"></i></button>
+                <button id="love"><i class="fa fa-check"></i></button>
+            </div>
+        </div>
     </div>
 </div>
         <script src="./scripts/script.js"></script>
