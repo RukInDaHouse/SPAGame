@@ -1030,10 +1030,9 @@ ul li ul li a {
 
 @-webkit-keyframes zoomout {
     100% {
-        width: 570%;
-        height: 570%;
-        top: -320%;
-        left: -40%;
+      width: 575%; 
+      top: -313.5%; 
+      left: -34.5%;
     }
 
     50% {
@@ -1043,19 +1042,17 @@ ul li ul li a {
     }
 
     0% {
-        width: 900%;
-        height: 900%;
-        top: -250%;
-        left: -60%;
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
     }
 }
 
 @-moz-keyframes zoomout {
     100% {
-        width: 570%;
-        height: 570%;
-        top: -320%;
-        left: -40%;
+      width: 575%; 
+      top: -313.5%; 
+      left: -34.5%;
     }
 
     50% {
@@ -1065,19 +1062,17 @@ ul li ul li a {
     }
 
     0% {
-        width: 900%;
-        height: 900%;
-        top: -250%;
-        left: -60%;
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
     }
 }
 
 @-o-keyframes zoomout {
     100% {
-        width: 570%;
-        height: 570%;
-        top: -320%;
-        left: -40%;
+      width: 575%; 
+      top: -313.5%; 
+      left: -34.5%;
     }
 
     50% {
@@ -1087,18 +1082,17 @@ ul li ul li a {
     }
 
     0% {
-        width: 900%;
-        height: 900%;
-        top: -250%;
-        left: -60%;
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
     }
 }
 
 @keyframes zoomout {
     100% {
-        width: 500%;
-        top: -260%;
-        left: -30%;
+      width: 575%; 
+      top: -313.5%; 
+      left: -34.5%;
     }
 
     50% {
@@ -1108,10 +1102,9 @@ ul li ul li a {
     }
 
     0% {
-        width: 900%;
-        height: 900%;
-        top: -250%;
-        left: -60%;
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
     }
 }
 
@@ -1143,9 +1136,9 @@ ul li ul li a {
 
 @-moz-keyframes zoomin {
     100% {
-        width: 900%;
-        top: -250%;
-        left: -60%;
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
     }
 
     0% {
@@ -1156,27 +1149,27 @@ ul li ul li a {
 
 @-o-keyframes zoomin {
     100% {
-        width: 900%;
-        top: -250%;
-        left: -60%;
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
     }
 
     0% {
-        width: 100%;
-        height: 100%;
-    }
+      width: 100%;
+      height: 100%;
+  }
 }
 
 @keyframes zoomin {
     100% {
-        width: 900%;
-        top: -265%;
-        left: -58%;
-    }
+      width: 650%; 
+      top: -157%; 
+      left: -17%;
+  }
 
     0% {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
     }
 }
 
@@ -1366,7 +1359,6 @@ ul li ul li a {
     -webkit-transition: all 2s cubic-bezier(1, 1, 0, 1, 1);
     -moz-transition: all 2s cubic-bezier(1, 1, 0, 1, 1);
     animation-delay: 7s;
-
 }
 
 @-webkit-keyframes zoominlog {
@@ -1711,7 +1703,7 @@ p:last-of-type {
   display: inline-block;
   z-index: 2;
   margin-top: 50px;
-  color: #FFF;
+  color: #000;
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
@@ -2039,7 +2031,6 @@ body.active .background6 {
   margin-top: 7%;
 }
 
-
 .quiz__container {
   width: 40%;
   height: 100%;
@@ -2332,7 +2323,7 @@ body.active .background6 {
 }
 
 .ajax-loader {
-  z-index: 9999999;
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2340,6 +2331,7 @@ body.active .background6 {
 
 .paw {
   position: absolute;
+  opacity: 0;
 }
 
 .medium__step__size svg{
@@ -2353,21 +2345,21 @@ body.active .background6 {
 }
 
 .paw:nth-child(2) {
-  transform: rotate(160deg);
-  top: 45%;
-  left: 11.5%;
-}
-
-.paw:nth-child(3) {
   transform: rotate(30deg);
   top: 49.3%;
   left: 17.5%;
 }
 
-.paw:nth-child(4) {
+.paw:nth-child(3) {
   transform: rotate(-18deg);
   top: 28%;
-  left: 18.9%;
+  left: 19%;
+}
+
+.paw:nth-child(4) {
+  transform: rotate(165deg);
+  top: 46%;
+  left: 7%;
 }
 
 .paw:nth-child(5) {
@@ -2392,4 +2384,72 @@ body.active .background6 {
   transform: rotate(70deg);
   top: 63.5%;
   left: 39.7%;
+}
+
+.step__appear {
+    -webkit-animation-name: step__animation;
+    -moz-animation-name: step__animation;
+    -o-animation-name: step__animation;
+    animation-name: step__animation;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes step__animation {
+    100% {
+        display: none;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes step__animation {
+    100% {
+        display: none;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes step__animation {
+    100% {
+        display: none;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes step__animation {
+    100% {
+        display: none;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
