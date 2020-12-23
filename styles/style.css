@@ -2191,14 +2191,6 @@ body.active .background6 {
   transform: rotateY(-180deg);
 }
 
-.quiz__question__active {
-  transform: rotateY(180deg);
-}
-
-.quiz__answer__active {
-  transform: rotateY(0deg); 
-}
-
 .quiz__card__side {
   width: 100%;
   height: 100%;
@@ -2321,6 +2313,7 @@ body.active .background6 {
 .card_bottom {
   bottom: -7px; 
 }
+
 
 .ajax-loader {
   z-index: 1;
