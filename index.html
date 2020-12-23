@@ -101,7 +101,9 @@
 2. Интерактивная карта условно-бесплатная, на 4 этапе Вам будет
 предложено купить ее либо выйти.<br>
 Стоимость увлекательного путешествия всего 890 руб.</p>
-                        <a href="#" onclick="setTimeout(function(){ onNavigate('/about'); }, 3550); return false;">
+                        <a href="#" onclick="setTimeout(function(){ 
+                            onNavigate('/about'); 
+                            }, 3550); return false;">
                             <div onclick="soundClick()" class="map btn-5 btn">OK</div>
                         </a>
                     </div>
@@ -110,20 +112,34 @@
         </div>
         <svg id="svg-sprite">
             <symbol id="paw" viewBox="0 0 249 209.32">
-            <image xlink:href="http://icons.veryicon.com/png/System/Icons8%20Metro%20Style/Tracks%20Footprints%20Left%20shoe.png" x="0" y="0" height="100px" width="100px"/>
+                <image xlink:href="http://icons.veryicon.com/png/System/Icons8%20Metro%20Style/Tracks%20Footprints%20Left%20shoe.png" x="0" y="0" height="100px" width="100px"/>
             </symbol>
         </svg>
         <div class="ajax-loader">
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw medium__step__size"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw medium__step__size"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
-            <div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+            <div class="paw">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw medium__step__size">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw medium__step__size">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw medium__step__size">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
+            <div class="paw">
+                <svg class="icon"><use xlink:href="#paw" /></svg>
+            </div>
         </div>
             <div class="mapbackgroundimage">
                 <img src="./images/backgroundmap.svg" />
@@ -190,9 +206,8 @@
     
     </div>
     
-        <div class="plane_block map">
-        </div>
-    </div>
+    <div class="plane_block map"></div>
+</div>
 <div class="container invisible">
     <div class="ratio16-9">
 
