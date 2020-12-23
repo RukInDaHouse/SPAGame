@@ -23,7 +23,7 @@ initCards();
 function createButtonListener(love) {
   return function (event) {
     var cards = document.querySelectorAll('.quizcard--card:not(.removed)');
-    var moveOutWidth = document.body.clientWidth * 0.3;
+    var moveOutWidth = document.body.clientWidth * 1.5;
 
     if (!cards.length) return false;
 
@@ -32,9 +32,10 @@ function createButtonListener(love) {
     card.classList.add('removed');
 
     if (love) {
-      card.style.transform = 'translate(' + moveOutWidth + 'px, -1000px) rotate(90deg)';
+      card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(0deg)';
     } else {
-      card.style.transform = 'translate(' + moveOutWidth + 'px, 1000px) rotate(90deg)';
+      card.style.transform = 'translateX(0%) rotateY(-180deg)';
+      card.style.zIndex = '99999';
     }
 
     initCards();
@@ -51,4 +52,4 @@ love.addEventListener('click', loveListener);
 
 nope.onclick = function() {
   cardtext[0].classList.remove('invisible');
-}
+  }
