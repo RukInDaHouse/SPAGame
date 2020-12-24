@@ -4,6 +4,7 @@ var header = document.getElementsByClassName('headercontainer');
 var container = document.getElementsByClassName('container');
 var audio = document.getElementsByTagName('audio');
 var paw = document.getElementsByClassName('paw');
+var arrow = document.getElementsByClassName('arrownext');
 
 map[2].onclick = function() {
     var audio = new Audio(); 
@@ -60,9 +61,9 @@ map[2].onclick = function() {
     }, 17000);
 
     setTimeout(function(){
-    var audio = new Audio(); 
-    audio.src = 'volume/ep2.mp3'; 
-    audio.autoplay = true;
+        var audio = new Audio(); 
+        audio.src = 'volume/ep2.mp3'; 
+        audio.autoplay = true;
     }, 44000);
 
     setTimeout(function(){
@@ -78,9 +79,13 @@ map[2].onclick = function() {
     }, 44000);
 }
 
-map[0].onclick = function() {
-    
+map[0].onclick = function() {  
     helloscreen[0].classList.add('flashmodal');
+}
+
+arrow[0].onclick = function() {  
+    container[3].classList.add('invisible');
+    container[4].classList.remove('invisible');
 }
 
 function soundClick() {
